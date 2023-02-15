@@ -3,6 +3,6 @@
 
 @section('content')
 
-<h1> Day la demo su dung Github </h1>
+<h1> Day la demo su dung github</h1>   
 
 @endsection

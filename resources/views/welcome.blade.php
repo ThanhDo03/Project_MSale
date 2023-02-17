@@ -12,8 +12,8 @@
 
 <body>
     <h2>Shoppingg</h2>
-    @if(session('error'))
-        <h3 style="color: red">{{session('error')}}</h3>
+    @if(session('error1'))
+    <h5 style="color: red">{{session('error1')}}</h5>
     @endif
     <div class="container" id="container">
         <div class="form-container sign-up-container">
@@ -26,14 +26,14 @@
                     <a href="#" class="social"><i class="fa fa-globe"></i></a>
                 </div>
                 <span>or use your email for registration</span>
-                <input type="text" placeholder="Name" name="name" required/>
-                <input type="email" placeholder="Email" name="email" required/>
-                <input type="password" placeholder="Password" name="password" required/>
+                <input type="text" placeholder="Name" name="name" required />
+                <input type="email" placeholder="Email" name="email" required />
+                <input type="password" placeholder="Password" name="password" required />
                 <button type="submit">Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="{{route('auth.signin')}}" method="POST" >
+            <form action="{{route('auth.signin')}}" method="POST">
                 @csrf
                 <h1>Sign in</h1>
                 <div class="social-container">
@@ -42,8 +42,11 @@
                     <a href="#" class="social"><i class="fa fa-globe"></i></a>
                 </div>
                 <span>or use your account</span>
-                <input type="email" placeholder="Email" name="email_name" required/>
-                <input type="password" placeholder="Password" name="pwd" required/>
+                <input type="email" placeholder="Email" name="email_name" required />
+                <input type="password" placeholder="Password" name="pwd" required />
+                @if(session('error'))
+                <h5 style="color: red">{{session('error')}}</h5>
+                @endif
                 <a href="#">Forgot your password?</a>
                 <button type="submit">Sign In</button>
             </form>

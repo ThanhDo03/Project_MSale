@@ -29,7 +29,7 @@ class UserController extends Controller
                 $newUser->save();
                 return redirect()->route('admin')->with('message', 'Create account success!');
             }else{
-                return redirect()->route('welcome')->with('error', 'Account exist!');
+                return redirect()->route('welcome')->with('error1', 'Account exist!');
             }
         }
     }

@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
-
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,7 +24,16 @@ Route::post('/SignIn',[UserController::class, 'login'])->name('auth.signin');
 Route::get('/Welcome', function () {
     return view('welcome');
 })->name('login');
-
+// Display Welcome
 Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
+// Upload Product
+Route::get('/ShowAddProduct',[UserController::class, 'UploadProduct'])->name('upload.Product');
+// Customer
+Route::get('/ShowCustomer',[UserController::class, 'Customer'])->name('customer');
+// Logout
+Route::get('/Logout', function(){
+    Auth::logout();
+    return redirect()->route('welcome');
+})->name('logout');

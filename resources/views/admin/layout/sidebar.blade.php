@@ -4,14 +4,14 @@
         <ul class="nav">
             <li class="nav-item">
                 <a class="nav-link" href="../../index.html">
-                    <span class="menu-title">Home</span>
-                    <i class="mdi mdi-home menu-icon"></i>
+                    <span class="menu-title">Home     </span>
+                    <i class="fa-sharp fa-solid fa-shop"></i>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="../../pages/icons/mdi.html">
-                    <span class="menu-title">Warehouse</span>
-                    <i class="mdi mdi-contacts menu-icon"></i>
+                    <span class="menu-title">Warehouse     </span>
+                    <i class="fa-sharp fa-solid fa-warehouse"></i>
                 </a>
             </li>
             <li class="nav-item">
@@ -37,7 +37,7 @@
                     <div class="border-bottom">
                         <h6 class="font-weight-normal mb-3">Projects</h6>
                     </div>
-                    <button class="btn btn-block btn-lg btn-gradient-primary mt-4">+ Add a project</button>
+                    <a href="{{route('upload.Product')}}" class="btn btn-block btn-lg btn-gradient-primary mt-4">+ Add a project</a>
                 </span>
             </li>
         </ul>

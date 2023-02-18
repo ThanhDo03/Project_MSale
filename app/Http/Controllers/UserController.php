@@ -11,7 +11,13 @@ class UserController extends Controller
     // Sign In
     public function login(Request $req){
         if (Auth::attempt(['email'=>$req->email_name, 'password'=>$req->pwd])){
-            return view('admin.management');
+            if(Auth::check()){
+                if(Auth::user()->role == 1){
+                    return view('admin.management');
+                }else{
+                    return view('customer.index');
+                }
+            }
         }else{
             return redirect()->route('login')->with('error', 'Invalid username or password :((');
         }
@@ -32,5 +38,15 @@ class UserController extends Controller
                 return redirect()->route('welcome')->with('error1', 'Account exist!');
             }
         }
+    }
+
+    // Upload Product
+    public function UploadProduct(){
+        return view('admin.add_product');
+    }
+
+    // Customer
+    public function Customer(){
+        return view('customer.index');
     }
 }

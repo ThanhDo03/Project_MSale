@@ -2,43 +2,65 @@
     <!-- partial:../../partials/_sidebar.html -->
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
+            <li class="nav-item nav-profile">
+                <a href="#" class="nav-link">
+                  <div class="nav-profile-image">
+                    <img src="{{asset('image/eiu.jpg')}}" alt="profile">
+                    <!--change to offline or busy as needed-->
+                  </div>
+                  <div class="nav-profile-text d-flex flex-column">
+                    <span class="font-weight-bold mb-2">{{Auth::user()->email}}</span>
+                    <span class="text-secondary text-small">Project Manager</span>
+                  </div>
+                </a>
+              </li>
             <li class="nav-item">
-                <a class="nav-link" href="../../index.html">
-                    <span class="menu-title">Home     </span>
+                <a class="nav-link" href="{{route('home.admin')}}">
                     <i class="fa-sharp fa-solid fa-shop"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../../pages/icons/mdi.html">
-                    <span class="menu-title">Warehouse     </span>
-                    <i class="fa-sharp fa-solid fa-warehouse"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../../pages/forms/basic_elements.html">
-                    <span class="menu-title">Category Product</span>
-                    <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+                    <span class="menu-title">.     Home</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="../../pages/charts/chartjs.html">
-                    <span class="menu-title">Charts</span>
-                    <i class="mdi mdi-chart-bar menu-icon"></i>
+                    <i class="fa-sharp fa-solid fa-user"></i>
+                    <span class="menu-title">.     Staff</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="../../pages/tables/basic-table.html">
-                    <span class="menu-title">Tables</span>
-                    <i class="mdi mdi-table-large menu-icon"></i>
+                    <i class="fa-sharp fa-solid fa-lock"></i>
+                    <span class="menu-title">.     Authorization</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../pages/tables/basic-table.html">
+                    <i class="fa-sharp fa-solid fa-person"></i>
+                    <span class="menu-title">.     My customer</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../pages/tables/basic-table.html">
+                    <i class="fa-sharp fa-solid fa-file-import"></i>
+                    <span class="menu-title">.     Import</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../pages/tables/basic-table.html">
+                    <i class="fa-sharp fa-solid fa-file-export"></i>
+                    <span class="menu-title">.     Export</span>
                 </a>
             </li>
             <li class="nav-item sidebar-actions">
                 <span class="nav-link">
-                    <div class="border-bottom">
-                        <h6 class="font-weight-normal mb-3">Projects</h6>
-                    </div>
-                    <a href="{{route('upload.Product')}}" class="btn btn-block btn-lg btn-gradient-primary mt-4">+ Add a project</a>
+                    <a href="{{route('upload.Product')}}" class="btn btn-block btn-lg btn-gradient-primary mt-4">+ Add a product</a>
                 </span>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('logout')}}">
+                    <span class="menu-title">Logout      .</span>
+
+                    <i class="fa-sharp fa-solid fa-right-from-bracket"> </i>
+                </a>
             </li>
         </ul>
     </nav>

@@ -147,7 +147,13 @@
                                 </ul>
                             </li>
                             <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">{{Auth::user()->email}}</a></li>
+                            @if (Route::has('auth.signin'))
+                                @auth
+                                    <li><a href="contact.html"> <i class="fa-sharp fa-solid fa-user"></i> {{Auth::user()->email}}</a></li>
+                                @else
+                                    <li><a href="{{route('welcome')}}">Sign In</a></li>
+                                @endauth
+                            @endif
                         </ul>
                     </div>
 

@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\Product;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -13,13 +15,14 @@ class UserController extends Controller
         if (Auth::attempt(['email'=>$req->email_name, 'password'=>$req->pwd])){
             if(Auth::check()){
                 if(Auth::user()->role == 1){
-                    return view('admin.management');
+                    $products = Product::all();
+                    return view('admin.management', compact('products'));
                 }else{
-                    return view('customer.index');
+                    return redirect()->route('customer')->with('msg','');
                 }
             }
         }else{
-            return redirect()->route('login')->with('error', 'Invalid username or password :((');
+            return redirect()->route('welcome')->with('error', 'Invalid username or password :((');
         }
     }
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cart_Items;
 use App\Models\Product;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -48,8 +49,10 @@ class UserController extends Controller
         return view('admin.add_product');
     }
 
-    // Customer
-    public function Customer(){
-        return view('customer.index');
+    public function search(Request $request){
+        $search = $request->ProductSearch;
+        $product = Product::where('product_name', 'LIKE', '%'.$search.'%')->get();
+        return view('customer.search_product', compact('product'), ['successMsg'=>'Search results for'.$search]);
     }
 }
+

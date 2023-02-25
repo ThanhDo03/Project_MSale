@@ -185,7 +185,7 @@
     <div class="right-side-cart-area">
 
         <div class="cart-button">
-            <a href="#" id="rightSideCart"><img src="img/core-img/bag.svg" alt=""> <span>3</span></a>
+            <a href="#" id="rightSideCart"><i class="fa-sharp fa-solid fa-bag-shopping"></i><span>3</span></a>
         </div>
         <div class="cart-content d-flex">
 
@@ -267,6 +267,145 @@
         </div>
     </section>
 
+    <section class="new_arrivals_area section-padding-80 clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="popular-products-slides owl-carousel">
+
+                        <div class="single-product-wrapper">
+
+                            <div class="product-img">
+                                <img src="{{asset('image/Product/product-3.jpg')}}" alt="">
+
+                                <img class="hover-img" src="img/product-img/product-2.jpg" alt="">
+
+                                <div class="product-favourite">
+                                    <a href="#" class="favme fa fa-heart"></a>
+                                </div>
+                            </div>
+
+                            <div class="product-description">
+                                <span>topshop</span>
+                                <a href="single-product-details.html">
+                                    <h6>Knot Front Mini Dress</h6>
+                                </a>
+                                <p class="product-price">$80.00</p>
+
+                                <div class="hover-content">
+
+                                    <div class="add-to-cart-btn">
+                                        <a href="#" class="btn essence-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-product-wrapper">
+
+                            <div class="product-img">
+                                <img src="img/product-img/product-2.jpg" alt="">
+
+                                <img class="hover-img" src="img/product-img/product-3.jpg" alt="">
+
+                                <div class="product-favourite">
+                                    <a href="#" class="favme fa fa-heart"></a>
+                                </div>
+                            </div>
+
+                            <div class="product-description">
+                                <span>topshop</span>
+                                <a href="single-product-details.html">
+                                    <h6>Poplin Displaced Wrap Dress</h6>
+                                </a>
+                                <p class="product-price">$80.00</p>
+
+                                <div class="hover-content">
+
+                                    <div class="add-to-cart-btn">
+                                        <a href="#" class="btn essence-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-product-wrapper">
+
+                            <div class="product-img">
+                                <img src="img/product-img/product-3.jpg" alt="">
+
+                                <img class="hover-img" src="img/product-img/product-4.jpg" alt="">
+
+                                <div class="product-badge offer-badge">
+                                    <span>-30%</span>
+                                </div>
+
+                                <div class="product-favourite">
+                                    <a href="#" class="favme fa fa-heart"></a>
+                                </div>
+                            </div>
+
+                            <div class="product-description">
+                                <span>mango</span>
+                                <a href="single-product-details.html">
+                                    <h6>PETITE Crepe Wrap Mini Dress</h6>
+                                </a>
+                                <p class="product-price"><span class="old-price">$75.00</span> $55.00</p>
+
+                                <div class="hover-content">
+
+                                    <div class="add-to-cart-btn">
+                                        <a href="#" class="btn essence-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-product-wrapper">
+
+                            <div class="product-img">
+                                <img src="img/product-img/product-4.jpg" alt="">
+
+                                <img class="hover-img" src="img/product-img/product-5.jpg" alt="">
+
+                                <div class="product-badge new-badge">
+                                    <span>New</span>
+                                </div>
+
+                                <div class="product-favourite">
+                                    <a href="#" class="favme fa fa-heart"></a>
+                                </div>
+                            </div>
+
+                            <div class="product-description">
+                                <span>mango</span>
+                                <a href="single-product-details.html">
+                                    <h6>PETITE Belted Jumper Dress</h6>
+                                </a>
+                                <p class="product-price">$80.00</p>
+
+                                <div class="hover-content">
+
+                                    <div class="add-to-cart-btn">
+                                        <a href="#" class="btn essence-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div class="top_catagory_area section-padding-80 clearfix">
         <div class="container">
@@ -302,6 +441,145 @@
         </div>
     </div>
 
+    <section class="new_arrivals_area section-padding-80 clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="popular-products-slides owl-carousel">
+
+                        <div class="single-product-wrapper">
+
+                            <div class="product-img">
+                                <img src="{{asset('image/Product/product-3.jpg')}}" alt="">
+
+                                <img class="hover-img" src="img/product-img/product-2.jpg" alt="">
+
+                                <div class="product-favourite">
+                                    <a href="#" class="favme fa fa-heart"></a>
+                                </div>
+                            </div>
+
+                            <div class="product-description">
+                                <span>topshop</span>
+                                <a href="single-product-details.html">
+                                    <h6>Knot Front Mini Dress</h6>
+                                </a>
+                                <p class="product-price">$80.00</p>
+
+                                <div class="hover-content">
+
+                                    <div class="add-to-cart-btn">
+                                        <a href="#" class="btn essence-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-product-wrapper">
+
+                            <div class="product-img">
+                                <img src="img/product-img/product-2.jpg" alt="">
+
+                                <img class="hover-img" src="img/product-img/product-3.jpg" alt="">
+
+                                <div class="product-favourite">
+                                    <a href="#" class="favme fa fa-heart"></a>
+                                </div>
+                            </div>
+
+                            <div class="product-description">
+                                <span>topshop</span>
+                                <a href="single-product-details.html">
+                                    <h6>Poplin Displaced Wrap Dress</h6>
+                                </a>
+                                <p class="product-price">$80.00</p>
+
+                                <div class="hover-content">
+
+                                    <div class="add-to-cart-btn">
+                                        <a href="#" class="btn essence-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-product-wrapper">
+
+                            <div class="product-img">
+                                <img src="img/product-img/product-3.jpg" alt="">
+
+                                <img class="hover-img" src="img/product-img/product-4.jpg" alt="">
+
+                                <div class="product-badge offer-badge">
+                                    <span>-30%</span>
+                                </div>
+
+                                <div class="product-favourite">
+                                    <a href="#" class="favme fa fa-heart"></a>
+                                </div>
+                            </div>
+
+                            <div class="product-description">
+                                <span>mango</span>
+                                <a href="single-product-details.html">
+                                    <h6>PETITE Crepe Wrap Mini Dress</h6>
+                                </a>
+                                <p class="product-price"><span class="old-price">$75.00</span> $55.00</p>
+
+                                <div class="hover-content">
+
+                                    <div class="add-to-cart-btn">
+                                        <a href="#" class="btn essence-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-product-wrapper">
+
+                            <div class="product-img">
+                                <img src="img/product-img/product-4.jpg" alt="">
+
+                                <img class="hover-img" src="img/product-img/product-5.jpg" alt="">
+
+                                <div class="product-badge new-badge">
+                                    <span>New</span>
+                                </div>
+
+                                <div class="product-favourite">
+                                    <a href="#" class="favme fa fa-heart"></a>
+                                </div>
+                            </div>
+
+                            <div class="product-description">
+                                <span>mango</span>
+                                <a href="single-product-details.html">
+                                    <h6>PETITE Belted Jumper Dress</h6>
+                                </a>
+                                <p class="product-price">$80.00</p>
+
+                                <div class="hover-content">
+
+                                    <div class="add-to-cart-btn">
+                                        <a href="#" class="btn essence-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div class="cta-area">
         <div class="container">
@@ -328,7 +606,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading text-center">
-                        <h2>Popular Products</h2>
+                        <h2></h2>
                     </div>
                 </div>
             </div>
@@ -467,28 +745,26 @@
     <div class="brands-area d-flex align-items-center justify-content-between">
 
         <div class="single-brands-logo">
-            <img src="{{asset('image/Logo/brand1.png')}}" alt="">
+            <img src="{{asset('image/Logo/Nike-Logo.png')}}" alt="">
         </div>
 
         <div class="single-brands-logo">
-            <img src="{{asset('image/Logo/brand2.png')}}" alt="">
+            <img src="{{asset('image/Logo/Adidas-Logo.png')}}" alt="">
         </div>
 
         <div class="single-brands-logo">
-            <img src="{{asset('image/Logo/brand3.png')}}" alt="">
+            <img src="{{asset('image/Logo/Vans-Logo.png')}}" alt="">
         </div>
 
         <div class="single-brands-logo">
-            <img src="{{asset('image/Logo/brand4.png')}}" alt="">
+            <img src="{{asset('image/Logo/MLB-Logo.png')}}" alt="">
         </div>
 
         <div class="single-brands-logo">
-            <img src="{{asset('image/Logo/brand5.png')}}" alt="">
+            <img src="{{asset('image/Logo/New-balance-Logo.png')}}" alt="">
         </div>
 
-        <div class="single-brands-logo">
-            <img src="{{asset('image/Logo/brand6.png')}}" alt="">
-        </div>
+       
     </div>
 
 

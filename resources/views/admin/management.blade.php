@@ -6,25 +6,25 @@
                 <div class="col-12 grid-margin">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">Product for Shopping <i class="fa-sharp fa-solid fa-cart-shopping"></i></h4>
+                            <h4 class="card-title">Product for Shopping <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                            </h4>
                             <div class="table-responsive">
-                                @foreach ($products as $product)
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th> ID </th>
-                                                <th> Product </th>
-                                                <th> Brand </th>
-                                                <th> Price </th>
-                                                <th> Image </th>
-                                                <th> WareHouse </th>
-                                                <th> Type </th>
-                                                <th> Action </th>
-                                            </tr>
-                                        </thead>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th> Product </th>
+                                            <th> Brand </th>
+                                            <th> Price </th>
+                                            <th> Image </th>
+                                            <th> Amount </th>
+                                            <th> Staff </th>
+                                            <th> Status </th>
+                                            <th> Action </th>
+                                        </tr>
+                                    </thead>
+                                    @foreach ($products as $product)
                                         <tbody>
                                             <tr>
-                                                <td>{{ $product->product_id }}</td>
                                                 <td>{{ $product->product_name }}</td>
                                                 <td>{{ $product->product_producer }}</td>
                                                 <td>{{ $product->product_price }}</td>
@@ -32,16 +32,34 @@
                                                     <img src="{{ asset('image/Product/' . $product->product_image) }}"
                                                         class="mr-2" alt="image">
                                                 </td>
-                                                <td>{{ $product->product_warehouse }}</td>
-                                                <td>{{ $product->product_type	 }}</td>
+                                                <td>{{ $product->product_amount }}</td>
+                                                <td>{{ $product->Staff }}</td>
+                                                <td>{{ $product->Status }}</td>
                                                 <td>
-                                                    <button style="border: none" class="badge badge-gradient-success">EDIT</button>
-                                                    <button style="border: none" class="badge badge-gradient-danger">DELETE</button>
+                                                    <a href="{{ route('update.product', $product->id) }}">
+                                                        <button style="border: none"
+                                                            class="badge badge-gradient-success">EDIT</button>
+                                                    </a>
+                                                    <a href="{{ route('delete.product', $product->id) }}">
+                                                        <button style="border: none" class="badge badge-gradient-danger"
+                                                            onclick="FunctionDelete()">DELETE</button>
+                                                    </a>
+                                                    <script>
+                                                        function FunctionDelete() {
+                                                            read = confirm('Are you sure you want to delete this product?');
+                                                            if (r == false) {
+                                                                return false;
+                                                                alert("Your product has been successfully deleted");
+                                                            } else {
+                                                                return true;
+                                                            }
+                                                        }
+                                                    </script>
                                                 </td>
                                             </tr>
                                         </tbody>
-                                    </table>
-                                @endforeach
+                                    @endforeach
+                                </table>
                             </div>
                         </div>
                     </div>

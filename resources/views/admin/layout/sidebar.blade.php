@@ -34,18 +34,6 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="../../pages/tables/basic-table.html">
-                    <i class="fa-sharp fa-solid fa-person"></i>
-                    <span class="menu-title">.     My customer</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../../pages/tables/basic-table.html">
-                    <i class="fa-sharp fa-solid fa-file-import"></i>
-                    <span class="menu-title">.     Import</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../../pages/tables/basic-table.html">
                     <i class="fa-sharp fa-solid fa-file-export"></i>
                     <span class="menu-title">.     Export</span>
                 </a>
